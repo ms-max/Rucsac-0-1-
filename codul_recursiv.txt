@@ -1,0 +1,42 @@
+/*implementarea recursivă
+problema ruczacului 0-1*/
+#include <stdio.h> 
+
+// fct returneaza 
+// maximum din doua valori intregi
+int max(int a, int b) { return (a > b) ? a : b; } 
+
+// Rreturneaza valoarea maximala  
+// pcare poate fi pusa in ruczac cu capacitatea W 
+int ruczac(int W, int wt[], int val[], int n) 
+{ 
+	// nu este luat niciun obiect
+	//ori ruczacul are capacitate 0
+	if (n == 0 || W == 0) 
+		return 0; 
+
+	// daca greutatea obiectului e mai mare decat 
+	// capacitatea ruczacului W, atunci 
+	// obiectul nu poate fi inclus in soluția optima
+	if (wt[n - 1] > W) 
+		return ruczac(W, wt, val, n - 1); 
+
+	// Rreturneaza maximum din doua cazuri: 
+	// (1) se include
+	// (2) nu se include 
+	else
+		return max( 
+			val[n - 1] + ruczac(W - wt[n - 1], wt, val, n - 1), 
+			ruczac(W, wt, val, n - 1)); 
+} 
+
+// testam fct cu valori concrete
+int main() 
+{ 
+	int val[] = { 60, 100, 120 }; 
+	int wt[] = { 10, 20, 30 }; 
+	int W = 50; 
+	int n = sizeof(val) / sizeof(val[0]); 
+	printf("%d", ruczac(W, wt, val, n)); 
+	return 0; 
+} 
