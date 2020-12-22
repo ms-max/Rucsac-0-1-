@@ -7,7 +7,8 @@ Pentru a rula proiectul accesați acest link: https://repl.it/@Mariaicova/Ruczac
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-
+![r2](https://user-images.githubusercontent.com/69718491/102915401-6d9b4500-448a-11eb-90e3-88e79488c17b.jpg)
+![r3](https://user-images.githubusercontent.com/69718491/102915404-6e33db80-448a-11eb-8eb0-0bbabfd110cf.jpg)
 
 ## 2. Descrierea algor, 
 cum lucrează alg din pct de vedere alg, se poate im, scheme logice, sau explic pe pași
