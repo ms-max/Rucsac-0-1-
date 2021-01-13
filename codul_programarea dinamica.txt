@@ -2,7 +2,7 @@
 problema ruczacului 0-1*/ 
 #include <stdio.h> 
 
-// fct returneaza 
+// functia returneaza 
 // maximum din doua valori intregi 
 int max(int a, int b) 
 { 
